@@ -1,0 +1,55 @@
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      width="48"
+      height="40"
+      viewBox="0 0 48 48"
+      style="display: block;margin: auto;"
+    >
+      <defs>
+        <filter
+          id="Ellipse_690"
+          x="0"
+          y="0"
+          width="48"
+          height="48"
+          filterUnits="userSpaceOnUse"
+        >
+          <feOffset dy="3" input="SourceAlpha"></feOffset>
+          <feGaussianBlur stdDeviation="3" result="blur"></feGaussianBlur>
+          <feFlood floodOpacity="0.161"></feFlood>
+          <feComposite operator="in" in2="blur"></feComposite>
+          <feComposite in="SourceGraphic"></feComposite>
+        </filter>
+      </defs>
+      <g
+        id="Group_9547"
+        dataName="Group 9547"
+        transform="translate(-1498.125 -1225.141)"
+      >
+        <g
+          transform="matrix(1, 0, 0, 1, 1498.13, 1225.14)"
+          filter="url(#Ellipse_690)"
+        >
+          <circle
+            id="Ellipse_690-2"
+            data-name="Ellipse 690"
+            cx="15"
+            cy="15"
+            r="15"
+            transform="translate(9 6)"
+            fill="#fff"
+          ></circle>
+        </g>
+        <g id="checked" transform="translate(1514.65 1240.199)">
+          <path
+            id="Path_5142"
+            dataName="Path 5142"
+            d="M112.521,123.615l-8.705,9.543a1.43,1.43,0,0,1-2.176,0l-3.683-4.1a1.481,1.481,0,1,1,2.176-2.009l2.595,2.93,7.617-8.287a1.468,1.468,0,0,1,2.093-.084A1.443,1.443,0,0,1,112.521,123.615Z"
+            transform="translate(-97.59 -121.206)"
+            fill="#259e17"
+          ></path>
+        </g>
+      </g>
+    </svg>

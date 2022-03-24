@@ -1,23 +1,68 @@
-import logo from './logo.svg';
-import './App.css';
+import RightMark from "./Assets/right-mark.svg";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="header">
+        <ul>
+          <li>Meals</li>
+          <li>Adjust Time</li>
+          <li>Saturday</li>
+          <li>Sunday</li>
+          <li>Monday</li>
+          <li>Tuesday</li>
+          <li>Wednestday</li>
+          <li>Thursday</li>
+          <li>Friday</li>
+        </ul>
+      </div>
+      <div className="body">
+        <ul>
+          <li>
+            <input type="text" />
+          </li>
+          <li>
+            <button>Adjust Time</button>
+          </li>
+          <li>
+            <img src={RightMark} alt="RightMark" />
+            <p>10:03pm</p>
+          </li>
+
+          <li>
+            <img src={RightMark} alt="RightMark" />
+            <p>10:03pm</p>
+          </li>
+
+          <li>
+            <img src={RightMark} alt="RightMark" />
+            <p>10:03pm</p>
+          </li>
+
+          <li>
+            <img src={RightMark} alt="RightMark" />
+            <p>10:03pm</p>
+          </li>
+
+          <li>
+            <img src={RightMark} alt="RightMark" />
+            <p>10:03pm</p>
+          </li>
+
+          <li>
+            <img src={RightMark} alt="RightMark" />
+            <p>10:03pm</p>
+          </li>
+
+          <li>
+            <img src={RightMark} alt="RightMark" />
+            <p>10:03pm</p>
+          </li>
+
+          {/*  */}
+        </ul>
+      </div>
+      <div className="button">Add More</div>
     </div>
   );
 }
