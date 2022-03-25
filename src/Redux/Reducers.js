@@ -3,26 +3,39 @@ const initialState = [
     id: Math.floor(Math.random() * new Date()),
     meals: "",
     days: {
-      saturday: "20:00",
-      sunday: null,
-      monday: null,
-      tuesday: null,
-      wednesday: null,
-      thursday: null,
-      friday: null,
+      saturday: "",
+      sunday: "",
+      monday: "",
+      tuesday: "",
+      wednesday: "",
+      thursday: "",
+      friday: "",
     },
   },
   {
     id: Math.floor(Math.random() * new Date()),
     meals: "",
     days: {
-      saturday: null,
-      sunday: null,
-      monday: null,
-      tuesday: null,
-      wednesday: null,
-      thursday: null,
-      friday: null,
+      saturday: "",
+      sunday: "",
+      monday: "",
+      tuesday: "",
+      wednesday: "",
+      thursday: "",
+      friday: "",
+    },
+  },
+  {
+    id: Math.floor(Math.random() * new Date()),
+    meals: "",
+    days: {
+      saturday: "",
+      sunday: "",
+      monday: "",
+      tuesday: "",
+      wednesday: "",
+      thursday: "",
+      friday: "",
     },
   },
 ];
@@ -50,6 +63,12 @@ const Reducers = (state = initialState, { type, payload }) => {
       console.log(payload);
       const findItem = state.find((item) => item.id === payload.id);
       findItem.days = payload.days;
+      return [...state];
+    }
+
+    case "CHANGE_TIME": {
+      const findItem = state.find((item) => item.id === payload.id);
+      findItem.days = { ...findItem.days, ...payload.days };
       return [...state];
     }
 

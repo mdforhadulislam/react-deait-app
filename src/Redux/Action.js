@@ -11,3 +11,10 @@ export function set_time(payload) {
     payload,
   };
 }
+
+export function change_time(payload) {
+  return {
+    type: "CHANGE_TIME",
+    payload,
+  };
+}

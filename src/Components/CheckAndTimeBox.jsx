@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function CheckAndTimeBox({ title, name, value, action }) {
-  const [isChecked, setIsChecked] = useState(false);
+  const [isChecked, setIsChecked] = useState(value ? true : false);
   return (
     <div
       className="w-full flex justify-between align-middle py-[6px] px-[15px] bg-slate-200 mt-[10px] rounded-md"
